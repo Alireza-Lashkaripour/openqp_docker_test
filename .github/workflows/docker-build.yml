@@ -33,7 +33,7 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           docker buildx build \
-            --platform linux/amd64,linux/arm64,linux/arm/v7 \
+            --platform linux/amd64 \
             --push \
             --tag alireza0027/openqp:latest \
             --tag alireza0027/openqp:$(date +'%Y%m%d') \
