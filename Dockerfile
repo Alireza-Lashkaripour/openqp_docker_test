@@ -45,7 +45,6 @@ RUN pip3 install dftd4
 # Set environment variables, initializing LD_LIBRARY_PATH if not defined
 ENV OPENQP_ROOT=/opt/openqp
 ENV OMP_NUM_THREADS=4
-ENV LD_LIBRARY_PATH=/opt/openqp/lib:${LD_LIBRARY_PATH:-}
 
 # Run tests to confirm installation
 RUN openqp --run_tests all
